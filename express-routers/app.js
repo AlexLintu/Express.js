@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const expressionsRouter = require('./expressions');
 
 const { getElementById, getIndexById, updateElement,
   seedElements, createElement } = require('./utils');
@@ -8,24 +9,10 @@ const PORT = process.env.PORT || 4001;
 // Use static server to serve the Express Yourself Website
 app.use(express.static('public'));
 
-let expressions = [];
-
-// custom router
-const expressionsRouter = express.Router();
-app.use('/expressions', expressionsRouter);
-
-expressionsRouter.get('/', (req, res, next) => {
-  res.send(expressions);
-});
-
-seedElements(expressions, 'expressions');
-let animals = [];
+const animals = [];
 seedElements(animals, 'animals');
 
-// Get all expressions
-app.get('/expressions', (req, res, next) => {
-  res.send(expressions);
-});
+app.use('/expressions', expressionsRouter);
 
 // Get a single expression
 app.get('/expressions/:id', (req, res, next) => {
@@ -90,7 +77,7 @@ app.post('/animals', (req, res, next) => {
   const receivedAnimal = createElement('animals', req.query);
   if (receivedAnimal) {
     animals.push(receivedAnimal);
-    res.send(receivedAnimal);
+    res.status(201).send(receivedAnimal);
   } else {
     res.status(400).send();
   }
