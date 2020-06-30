@@ -10,6 +10,8 @@ const PORT = process.env.PORT || 4001;
 
 // Use static server to serve the Express Yourself Website
 app.use(express.static('public'));
+
+// Mounting routers to specified paths
 app.use('/expressions', expressionsRouter);
 app.use('/animals', animalsRouter);
 

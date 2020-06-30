@@ -2,7 +2,7 @@ const express = require('express');
 const { getElementById, getIndexById, updateElement,
   seedElements, createElement } = require('./utils');
 
-
+// Create an instance of Express router
 const animalsRouter = express.Router();
 
 const animals = [];
