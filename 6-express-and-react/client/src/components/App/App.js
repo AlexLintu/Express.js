@@ -1,15 +1,15 @@
 import React from 'react';
 import Users from '../Users/Users';
-import './App.css';
+import './App.scss';
 
 
 function App() {
   return (
     <>
-      <header className="App-header">
+      <div className="App__container">
         <h1>Text in the App component</h1>
         <Users />
-      </header>
+      </div>
     </>
   );
 }

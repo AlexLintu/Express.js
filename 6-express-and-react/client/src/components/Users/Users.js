@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Users.css';
+import './Users.scss';
 
 
 function Users() {
@@ -26,8 +26,8 @@ function Users() {
           <li key={user.id}>{user.name}</li>
         )}
       </ol>
-      <hr />
-      <span>Has error: {JSON.stringify(hasError)}</span>
+
+      <span className="error-message">Has error: {JSON.stringify(hasError)}</span>
     </>
   )
 };

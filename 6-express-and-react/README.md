@@ -31,6 +31,12 @@ Backend:
 
 Frontend:
 
+18. Add `Sass` by running `npm install node-sass --save`
+19. Update all `.css` extensions to `.scss`
+20. Run the app to make sure everything is working as expected
+    (BEM: https://www.freecodecamp.org/news/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849/
+    Sass: https://sass-lang.com/documentation/variables)
+
 ## Stack:
 
 Backend:
