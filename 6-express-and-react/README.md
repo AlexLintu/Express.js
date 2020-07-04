@@ -24,6 +24,13 @@ Frontend:
     (Runs on: http://localhost:3000/)
 15. Create `components` directory and components making a get request to the Express server
 
+Backend:
+
+16. Add new scripts in `package.json` (server level) to run server and client simultaneously `"client": "npm start --prefix client" "dev": "concurrently \"npm run server\" \"npm run client\""`
+17. Run `npm run dev` to have both backend and frontend servers run at the same time
+
+Frontend:
+
 ## Stack:
 
 Backend:
@@ -32,8 +39,8 @@ Backend:
 - Node.js Express.js
 - REST API
 - JSON
-- Main Dependencies: concurrently
-- Dev Dependencies: nodemon
+- Main Dependencies: concurrently (https://www.npmjs.com/package/concurrently)
+- Dev Dependencies: nodemon (https://www.npmjs.com/package/nodemon)
 
 Frontend:
 
