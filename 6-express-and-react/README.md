@@ -11,7 +11,7 @@ Backend:
 6. Install dependencies and add them to the `package.json` file by running `npm i express concurrently --save`. This will create `package-lock.json` file automatically
 7. Install `npm i nodemon --save-dev` to update the app automatically
 8. Add `scripts` to `package.json`
-9. Create a `server.js` and add express server into it with at least one route
+9. Create a `server.js` and add Express server into it with at least one route
 10. `npm run server` to run the script we created that runs and watches the `server.js`
     (Runs on: http://localhost:5000/api/users)
 
@@ -22,3 +22,22 @@ Frontend:
 13. `cd` into `client` directory
 14. Start rect app `npm start`
     (Runs on: http://localhost:3000/)
+15. Create `components` directory and components making a get request to the Express server
+
+## Stack:
+
+Backend:
+
+- JavaScript
+- Node.js Express.js
+- REST API
+- JSON
+- Main Dependencies: concurrently
+- Dev Dependencies: nodemon
+
+Frontend:
+
+- JavaScript
+- React.js
+- fetch API
+- Sass (.scss)
