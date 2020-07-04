@@ -23,7 +23,7 @@ function Users() {
       <h2>Text in the Users component</h2>
       <ol>
         {users.map(user =>
-          <li key={user.id}>{user.name}</li>
+          <li key={user.id}>Name: {user.name}, id: {user.id}</li>
         )}
       </ol>
 

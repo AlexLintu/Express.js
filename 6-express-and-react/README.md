@@ -36,6 +36,7 @@ Frontend:
 20. Run the app to make sure everything is working as expected
     (BEM: https://www.freecodecamp.org/news/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849/
     Sass: https://sass-lang.com/documentation/variables)
+21. Add `uuid` dependency by running `npm i uuid --save` to generate unique ids for the POST/DELETE requests
 
 ## Stack:
 
@@ -54,3 +55,4 @@ Frontend:
 - React.js
 - fetch API
 - Sass (.scss)
+- uuid: https://www.npmjs.com/package/uuid
